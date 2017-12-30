@@ -41,17 +41,4 @@ public class Screenshot {
 
 	}
 	
-	public static void AppCloseScreenshot(WebDriver driver, int randomNumber) throws IOException {
-		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-		String screenshotname = "Test123";
-		String filetype = ".png";
-		String Randomscreenshotname = screenshotname + randomNumber + filetype;
-		System.out.println("Failed script screenshot taken");
-		System.out.println(Randomscreenshotname);
-
-		FileUtils.copyFile(src,
-				new File("C:\\Users\\Prem\\Meridian\\FailedStepsScreenshots\\" + "Failed" + Randomscreenshotname));
-
-	}
 }

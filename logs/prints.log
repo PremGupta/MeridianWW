@@ -31,3 +31,8 @@
 03:51:41.238 [main] INFO  resources.base - This test is passed as : Test1232312 is Approved
 03:53:22.063 [main] INFO  resources.base - This test is passed as : Test1236818 is created
 03:53:27.466 [main] INFO  resources.base - This test is passed as : Test1236818 is Approved
+14:20:50.831 [main] INFO  resources.base - This test is Failed as : Test1230 is not created as Failed
+14:23:30.926 [main] INFO  resources.base - This test is passed as : Test12343 is created
+14:23:36.357 [main] INFO  resources.base - This test is passed as : Test12343 is Approved
+14:34:06.626 [main] INFO  resources.base - This test is Failed as : Test1234941 is not created as Failed
+14:35:45.110 [main] INFO  resources.base - This test is Failed as : Test1233074 is not created as Failed

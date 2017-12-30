@@ -132,6 +132,7 @@ public class AnnouncementsFullCode {
 		}
 
 		catch (Exception e) {
+			randomnumber = (int) (10 + Math.random() * ((10000 - 1) + 1));
 			Screenshot.failedStepsScreenshot(driver, randomnumber);
 			log.info("This test is Failed as : " + "Test123" + randomnumber + " is not created as Failed");
 			e.printStackTrace();
