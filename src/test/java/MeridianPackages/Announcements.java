@@ -117,6 +117,8 @@ public class Announcements extends base {
 		}
 
 		catch (Exception e) {
+			report=new ExtentReports("./Reports/ExecutionReport_AnnouncementCreation_Framework.html");
+			logger=report.startTest("Test Failed: AnnouncementCreation_Framework");
 			randomnumber = (int) (10 + Math.random() * ((10000 - 1) + 1));
 			Screenshot.failedStepsScreenshot(driver, randomnumber);
 			log.info("This test is Failed as : " + "Test123" + randomnumber + " is not created as Failed");

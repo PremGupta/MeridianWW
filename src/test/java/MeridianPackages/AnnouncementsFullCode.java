@@ -86,7 +86,7 @@ public class AnnouncementsFullCode {
 			act1.moveToElement(admin).build().perform();
 			driver.findElement(By.xpath("//a[@class='dropdown-toggle has-submenu'][text()='Admin']")).click();
 			Thread.sleep(2000);
-			driver.findElement(By.xpath("(//a[text()='Announcements'])[2]")).click();
+			//driver.findElement(By.xpath("(//a[text()='Announcements'])[2]")).click();
 
 			driver.findElement(By.xpath("//input[@value='Create New Announcement']")).click();
 			randomnumber = (int) (10 + Math.random() * ((10000 - 1) + 1));
@@ -132,6 +132,8 @@ public class AnnouncementsFullCode {
 		}
 
 		catch (Exception e) {
+			report=new ExtentReports("./Reports/ExecutionReport_AnnouncementCreation_Fullcode.html");
+			logger=report.startTest("Test Failed: AnnouncementCreation_Fullcode");
 			randomnumber = (int) (10 + Math.random() * ((10000 - 1) + 1));
 			Screenshot.failedStepsScreenshot(driver, randomnumber);
 			log.info("This test is Failed as : " + "Test123" + randomnumber + " is not created as Failed");
