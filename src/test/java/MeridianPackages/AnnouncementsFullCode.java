@@ -56,18 +56,18 @@ public class AnnouncementsFullCode {
 		
 		try {
 
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Prem\\Meridian\\Jars\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Prem\\Meridian\\DriversExecutable\\chromedriver.exe");
 			driver = new ChromeDriver();
 
 			/*
 			 * System.setProperty("webdriver.gecko.driver",
-			 * "C:\\Users\\Prem\\Meridian\\Jars\\geckodriver.exe"); driver
+			 * "C:\\Users\\Prem\\Meridian\\DriversExecutable\\geckodriver.exe"); driver
 			 * =new FirefoxDriver();
 			 */
 
 			/*
 			 * System.setProperty("webdriver.ie.driver",
-			 * "C:\\Users\\Prem\\Meridian\\Jars\\IEDriverServer.exe"); driver=
+			 * "C:\\Users\\Prem\\Meridian\\DriversExecutable\\IEDriverServer.exe"); driver=
 			 * new InternetExplorerDriver();
 			 */
 			driver.get("https://demosite.meridinet.com/template/login.html");

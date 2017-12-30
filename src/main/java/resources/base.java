@@ -31,19 +31,19 @@ System.out.println(browserName);
 
 if(browserName.equals("chrome"))
 {
-	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Prem\\Meridian\\Jars\\chromedriver.exe");
+	System.setProperty("webdriver.chrome.driver", "C:\\Users\\Prem\\Meridian\\DriversExecutable\\chromedriver.exe");
 	driver= new ChromeDriver();
 		//execute in chrome driver
 	
 }
 else if (browserName.equals("firefox"))
 {
-	System.setProperty("webdriver.gecko.driver", "C:\\Users\\Prem\\Meridian\\Jars\\geckodriver.exe");
+	System.setProperty("webdriver.gecko.driver", "C:\\Users\\Prem\\Meridian\\DriversExecutable\\geckodriver.exe");
 	 driver= new FirefoxDriver();
 }
 else if (browserName.equals("IE"))
 {
-	System.setProperty("webdriver.ie.driver", "C:\\Users\\Prem\\Meridian\\Jars\\IEDriverServer.exe");
+	System.setProperty("webdriver.ie.driver", "C:\\Users\\Prem\\Meridian\\DriversExecutable\\IEDriverServer.exe");
 	 driver= new InternetExplorerDriver();
 }
 
